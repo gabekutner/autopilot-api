@@ -30,4 +30,8 @@ async def generate(req: MessageRequest):
                     {"role": "user", "content": f'They sent me: "{req.message}"'}
             ]
         )
-    return {'response': response.choices[0].message.content}
+
+    response_text = response.choices[0].message.content
+    if response_text:
+        response_text = response_text[0].upper() + response_text[1:]
+    return {"response": response_text}
