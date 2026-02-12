@@ -21,7 +21,7 @@ async def generate(req: MessageRequest):
         Rules:
         - Write ONLY the reply, nothing else
         - Keep it short, 1-3 sentences max
-        - Lowercase, minimal punctuation like real texts
+        - Minimal punctuation like real texts
         - Match the energy of what they sent
         - Be natural, funny, a little charming
         - Never be try-hard or cringe
